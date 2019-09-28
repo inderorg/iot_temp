@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'redux',
+1 verbose cli   'react-redux' ]
+2 info using npm@6.9.0
+3 info using node@v10.15.3
+4 verbose npm-session 50b32eeac590f612
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for react-redux@latest request to https://registry.npmjs.com/react-redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.com registry.npmjs.com:443
+8 warn registry Using stale data from https://registry.npmjs.com/ because the host is inaccessible -- are you offline?
+9 warn registry Using stale data from https://registry.npmjs.com/ due to a request error during revalidation.
+10 http fetch GET 200 https://registry.npmjs.com/redux 95ms (from cache)
+11 silly pacote range manifest for redux@^4.0.4 fetched in 123ms
+12 timing stage:rollbackFailedOptional Completed in 1ms
+13 timing stage:runTopLevelLifecycles Completed in 2421ms
+14 verbose type system
+15 verbose stack FetchError: request to https://registry.npmjs.com/react-redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.com registry.npmjs.com:443
+15 verbose stack     at ClientRequest.req.on.err (/usr/local/lib/node_modules/npm/node_modules/node-fetch-npm/src/index.js:68:14)
+15 verbose stack     at ClientRequest.emit (events.js:189:13)
+15 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:392:9)
+15 verbose stack     at TLSSocket.emit (events.js:189:13)
+15 verbose stack     at emitErrorNT (internal/streams/destroy.js:82:8)
+15 verbose stack     at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+15 verbose stack     at process._tickCallback (internal/process/next_tick.js:63:19)
+16 verbose cwd /Users/inder.patliya/Desktop/reactcomp/newapp/newapp
+17 verbose Darwin 18.5.0
+18 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "redux" "react-redux"
+19 verbose node v10.15.3
+20 verbose npm  v6.9.0
+21 error code ENOTFOUND
+22 error errno ENOTFOUND
+23 error network request to https://registry.npmjs.com/react-redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.com registry.npmjs.com:443
+24 error network This is a problem related to network connectivity.
+24 error network In most cases you are behind a proxy or have bad network settings.
+24 error network
+24 error network If you are behind a proxy, please make sure that the
+24 error network 'proxy' config is set properly.  See: 'npm help config'
+25 verbose exit [ 1, true ]
