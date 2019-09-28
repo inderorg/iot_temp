@@ -1,7 +1,7 @@
 import { FETCH_DATA } from './types';
 import axios from 'axios';
 
-const apiUrl = 'https://api.github.com/users/KrunalLathiya';
+const apiUrl = 'https://api.github.com/users';
 
 export const fetchData = (data) => {
   return {
@@ -22,27 +22,27 @@ export const fetchDeviceData = () => {
   };
 };
 
-export function addDevice(device)
-{
-    return {
-    type:'ADD_DEVICE',
-    payload:device
-    }
-}
+// export function addDevice(device)
+// {
+//     return {
+//     type:'ADD_DEVICE',
+//     payload:device
+//     }
+// }
 
-export function deleteDevice(Id)
-{
-    return {
-    type:'DELETE_DEVICE',
-    payload:Id
-    }
-}
+// export function deleteDevice(Id)
+// {
+//     return {
+//     type:'DELETE_DEVICE',
+//     payload:Id
+//     }
+// }
 
-export function updateDevice(device)
-{
-    return {
-        type:'UPDATE_DEVICE',
-        payload:device
-        }
+// export function updateDevice(device)
+// {
+//     return {
+//         type:'UPDATE_DEVICE',
+//         payload:device
+//         }
 
-}
+// }
