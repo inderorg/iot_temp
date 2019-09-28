@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux';
 
 function Devices({ data }){
   const datalist = data.map((value)=>{
     return (
-      <div className="card">
+              <div className="card" style={{width: "500px",
+                display: "inherit",
+                padding: "20px",
+                margin: "20px"}}>
                         <div className="card-body">
                             <h5 className="card-title">DeviceName: {value.id }</h5>
                             <p className="card-text">Temperature: {value.login }</p>
-                            <h3 className="card-text">Humidity: {value.node_id }</h3>
+                            <h3 className="card-text">Humidity: {value.type }</h3>
                         </div>
                         <div className="card-footer">
                             <small className="text-muted">Time : Last updated 3 mins ago</small>
@@ -25,7 +28,7 @@ function Devices({ data }){
       }
       return (
         <div>
-            <div className="card-group" style={{padding:"10px", display:"inline-block"}}>
+            <div style={{padding:"10px", display:"inline-block"}}>
                 {datalist}
             </div>
         </div>
